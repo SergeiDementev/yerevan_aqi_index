@@ -1,4 +1,4 @@
-ETL pipeline based on API request, Airflow and PostgreSQL. 
+# ETL pipeline based on API request, Airflow and PostgreSQL. 
 
 Pipeline connects purpleair.com, gets data from a chosen sensor, and inserts data into local PostgreSQL database every 5 minutes. 
 
