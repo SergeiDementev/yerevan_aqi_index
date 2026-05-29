@@ -1,5 +1,15 @@
 # ETL pipeline based on API request, Airflow and PostgreSQL. 
 
+The idea of the project is to collect data from the sensor to count Air Quality Index and analyze whether AQI provided by Purpleair is counted correctly. 
+
+As the index counted depends not only on the PM2.5 (microscopic airborne particles measuring 2.5 micrometers or less in diameter), but also  humidity and temperature. 
+
+Collected data:
+- date / time (timestamp);
+- humidity;
+- temperature;
+- pm2_5.
+
 Pipeline connects purpleair.com, gets data from a chosen sensor, and inserts data into local PostgreSQL database every 5 minutes. 
 
 The API token for connection purpleair.com taken from https://develop.purpleair.com/ (registration is free).
